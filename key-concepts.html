@@ -1,0 +1,481 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DC Circuits | Key Concepts</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <svg width="40" height="40" viewBox="0 0 40 40">
+                <circle cx="20" cy="20" r="15" fill="#008080" />
+                <text x="20" y="25" font-size="14" text-anchor="middle" fill="#fff">DC</text>
+            </svg>
+            <h1>DC Circuits</h1>
+        </div>
+        <nav>
+            <div class="menu-toggle">
+                <i class="fas fa-bars"></i>
+            </div>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="introduction.html">Introduction</a></li>
+                <li class="active"><a href="key-concepts.html">Key Concepts</a></li>
+                <li><a href="applications.html">Applications</a></li>
+                <li><a href="references.html">References</a></li>
+             
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <div class="page-banner">
+            <h2>Key Concepts in DC Circuits</h2>
+        </div>
+
+        <section class="content-section">
+            <div class="container">
+                <div class="content-with-sidebar">
+                    <div class="main-content">
+                        <article>
+                            <section id="ohms-law">
+                                <h2>Ohm's Law</h2>
+                                <p>Ohm's Law is one of the most fundamental relationships in electrical engineering. It describes the relationship between voltage (V), current (I), and resistance (R) in an electrical circuit.</p>
+                                
+                                <div class="formula-block">
+                                    <h3>The Formula:</h3>
+                                    <div class="formula">
+                                        <p>V = I × R</p>
+                                    </div>
+                                    <p>Where:</p>
+                                    <ul>
+                                        <li>V = Voltage in volts (V)</li>
+                                        <li>I = Current in amperes (A)</li>
+                                        <li>R = Resistance in ohms (Ω)</li>
+                                    </ul>
+                                </div>
+                                
+                                <p>This law can be rearranged to find any of the three values if the other two are known:</p>
+                                
+                                <div class="formula-variations">
+                                    <div class="formula">
+                                        <p>I = V ÷ R</p>
+                                        <span>To find current</span>
+                                    </div>
+                                    <div class="formula">
+                                        <p>R = V ÷ I</p>
+                                        <span>To find resistance</span>
+                                    </div>
+                                </div>
+                                
+                                <div class="example-box">
+                                    <h3>Example Problem</h3>
+                                    <p>If a circuit has a voltage of 12V and a resistance of 4Ω, what is the current?</p>
+                                    <div class="solution">
+                                        <p>Using Ohm's Law: I = V ÷ R</p>
+                                        <p>I = 12V ÷ 4Ω = 3A</p>
+                                        <p>Therefore, the current flowing through the circuit is 3 amperes.</p>
+                                    </div>
+                                </div>
+                                
+                                <div class="ohms-law-calculator">
+                                    <h3>Ohm's Law Calculator</h3>
+                                    <div class="calculator-inputs">
+                                        <div class="input-group">
+                                            <label for="voltage">Voltage (V):</label>
+                                            <input type="number" id="voltage" placeholder="Enter voltage">
+                                        </div>
+                                        <div class="input-group">
+                                            <label for="current">Current (A):</label>
+                                            <input type="number" id="current" placeholder="Enter current">
+                                        </div>
+                                        <div class="input-group">
+                                            <label for="resistance">Resistance (Ω):</label>
+                                            <input type="number" id="resistance" placeholder="Enter resistance">
+                                        </div>
+                                    </div>
+                                    <div class="calculator-buttons">
+                                        <button id="calc-voltage" class="btn">Calculate Voltage</button>
+                                        <button id="calc-current" class="btn">Calculate Current</button>
+                                        <button id="calc-resistance" class="btn">Calculate Resistance</button>
+                                    </div>
+                                    <div class="calculator-result">
+                                        <p>Result: <span id="ohm-result">-</span></p>
+                                    </div>
+                                </div>
+                            </section>
+                            
+                            <section id="series-circuits">
+                                <h2>Series Circuits</h2>
+                                <p>In a series circuit, components are connected end-to-end, forming a single path for current flow. This arrangement has several important characteristics that affect how the circuit behaves.</p>
+                                
+                                <div class="circuit-diagram">
+                                    <svg width="500" height="150" viewBox="0 0 500 150">
+                                        <!-- Battery -->
+                                        <line x1="50" y1="75" x2="50" y2="40" stroke="#000" stroke-width="2" />
+                                        <line x1="40" y1="40" x2="60" y2="40" stroke="#000" stroke-width="2" />
+                                        <line x1="35" y1="30" x2="65" y2="30" stroke="#000" stroke-width="2" />
+                                        
+                                        <!-- Wires -->
+                                        <line x1="50" y1="30" x2="50" y2="15" stroke="#000" stroke-width="2" />
+                                        <line x1="50" y1="15" x2="100" y2="15" stroke="#000" stroke-width="2" />
+                                        <line x1="100" y1="15" x2="100" y2="75" stroke="#000" stroke-width="2" />
+                                        <line x1="100" y1="75" x2="150" y2="75" stroke="#000" stroke-width="2" />
+                                        <line x1="200" y1="75" x2="250" y2="75" stroke="#000" stroke-width="2" />
+                                        <line x1="300" y1="75" x2="350" y2="75" stroke="#000" stroke-width="2" />
+                                        <line x1="400" y1="75" x2="450" y2="75" stroke="#000" stroke-width="2" />
+                                        <line x1="450" y1="75" x2="450" y2="15" stroke="#000" stroke-width="2" />
+                                        <line x1="450" y1="15" x2="50" y2="15" stroke="#000" stroke-width="2" />
+                                        <line x1="50" y1="75" x2="100" y2="75" stroke="#000" stroke-width="2" />
+                                        
+                                        <!-- Resistors -->
+                                        <path d="M150,75 L155,70 L160,80 L165,70 L170,80 L175,70 L180,80 L185,70 L190,80 L195,70 L200,75" fill="none" stroke="#000" stroke-width="2" />
+                                        <path d="M250,75 L255,70 L260,80 L265,70 L270,80 L275,70 L280,80 L285,70 L290,80 L295,70 L300,75" fill="none" stroke="#000" stroke-width="2" />
+                                        <path d="M350,75 L355,70 L360,80 L365,70 L370,80 L375,70 L380,80 L385,70 L390,80 L395,70 L400,75" fill="none" stroke="#000" stroke-width="2" />
+                                        
+                                        <!-- Text Labels -->
+                                        <text x="175" y="100" text-anchor="middle" font-size="12">R1</text>
+                                        <text x="275" y="100" text-anchor="middle" font-size="12">R2</text>
+                                        <text x="375" y="100" text-anchor="middle" font-size="12">R3</text>
+                                        <text x="50" y="100" text-anchor="middle" font-size="12">V</text>
+                                    </svg>
+                                </div>
+                                
+                                <h3>Key Characteristics of Series Circuits</h3>
+                                
+                                <div class="characteristics-grid">
+                                    <div class="characteristic-item">
+                                        <h4><i class="fas fa-bolt"></i> Current</h4>
+                                        <p>The current is the same through each component in a series circuit.</p>
+                                        <div class="formula">
+                                            <p>I<sub>total</sub> = I<sub>1</sub> = I<sub>2</sub> = I<sub>3</sub> = ...</p>
+                                        </div>
+                                    </div>
+                                    
+                                    <div class="characteristic-item">
+                                        <h4><i class="fas fa-plug"></i> Voltage</h4>
+                                        <p>The voltage is divided among the components in a series circuit.</p>
+                                        <div class="formula">
+                                            <p>V<sub>total</sub> = V<sub>1</sub> + V<sub>2</sub> + V<sub>3</sub> + ...</p>
+                                        </div>
+                                    </div>
+                                    
+                                    <div class="characteristic-item">
+                                        <h4><i class="fas fa-random"></i> Resistance</h4>
+                                        <p>The total resistance is the sum of all individual resistances.</p>
+                                        <div class="formula">
+                                            <p>R<sub>total</sub> = R<sub>1</sub> + R<sub>2</sub> + R<sub>3</sub> + ...</p>
+                                        </div>
+                                    </div>
+                                    
+                                    <div class="characteristic-item">
+                                        <h4><i class="fas fa-exclamation-triangle"></i> Circuit Breaks</h4>
+                                        <p>If any component in a series circuit fails open, the entire circuit is broken and no current flows.</p>
+                                    </div>
+                                </div>
+                                
+                                <div class="example-box">
+                                    <h3>Example Problem</h3>
+                                    <p>Calculate the total resistance of a series circuit containing three resistors: 10Ω, 15Ω, and 25Ω.</p>
+                                    <div class="solution">
+                                        <p>Using the formula: R<sub>total</sub> = R<sub>1</sub> + R<sub>2</sub> + R<sub>3</sub></p>
+                                        <p>R<sub>total</sub> = 10Ω + 15Ω + 25Ω = 50Ω</p>
+                                        <p>Therefore, the total resistance of the circuit is 50 ohms.</p>
+                                    </div>
+                                </div>
+                                
+                                <div class="series-calculator">
+                                    <h3>Series Resistance Calculator</h3>
+                                    <div class="resistor-inputs" id="series-resistor-inputs">
+                                        <div class="resistor-input">
+                                            <label for="series-r1">R1 (Ω):</label>
+                                            <input type="number" id="series-r1" placeholder="Enter resistance" value="10">
+                                        </div>
+                                        <div class="resistor-input">
+                                            <label for="series-r2">R2 (Ω):</label>
+                                            <input type="number" id="series-r2" placeholder="Enter resistance" value="20">
+                                        </div>
+                                    </div>
+                                    <div class="calculator-controls">
+                                        <button id="add-series-resistor" class="btn small"><i class="fas fa-plus"></i> Add Resistor</button>
+                                        <button id="remove-series-resistor" class="btn small"><i class="fas fa-minus"></i> Remove Resistor</button>
+                                        <button id="calculate-series" class="btn">Calculate Total Resistance</button>
+                                    </div>
+                                    <div class="calculator-result">
+                                        <p>Total Resistance: <span id="series-result">30Ω</span></p>
+                                    </div>
+                                </div>
+                            </section>
+                            
+                            <section id="parallel-circuits">
+                                <h2>Parallel Circuits</h2>
+                                <p>In a parallel circuit, components are connected across each other, providing multiple paths for current flow. This arrangement has different characteristics than series circuits.</p>
+                                
+                                <div class="circuit-diagram">
+                                    <svg width="300" height="250" viewBox="0 0 300 250">
+                                        <!-- Battery -->
+                                        <line x1="50" y1="125" x2="50" y2="85" stroke="#000" stroke-width="2" />
+                                        <line x1="40" y1="85" x2="60" y2="85" stroke="#000" stroke-width="2" />
+                                        <line x1="35" y1="75" x2="65" y2="75" stroke="#000" stroke-width="2" />
+                                        
+                                        <!-- Wires -->
+                                        <line x1="50" y1="75" x2="50" y2="25" stroke="#000" stroke-width="2" />
+                                        <line x1="50" y1="25" x2="75" y2="25" stroke="#000" stroke-width="2" />
+                                        <line x1="75" y1="25" x2="75" y2="225" stroke="#000" stroke-width="2" />
+                                        <line x1="75" y1="225" x2="50" y2="225" stroke="#000" stroke-width="2" />
+                                        <line x1="50" y1="225" x2="50" y2="125" stroke="#000" stroke-width="2" />
+                                        
+                                        <!-- Branching points -->
+                                        <line x1="75" y1="75" x2="225" y2="75" stroke="#000" stroke-width="2" />
+                                        <line x1="75" y1="125" x2="225" y2="125" stroke="#000" stroke-width="2" />
+                                        <line x1="75" y1="175" x2="225" y2="175" stroke="#000" stroke-width="2" />
+                                        
+                                        <!-- Resistors -->
+                                        <path d="M125,75 L130,70 L135,80 L140,70 L145,80 L150,70 L155,80 L160,70 L165,80 L170,70 L175,75" fill="none" stroke="#000" stroke-width="2" />
+                                        <path d="M125,125 L130,120 L135,130 L140,120 L145,130 L150,120 L155,130 L160,120 L165,130 L170,120 L175,125" fill="none" stroke="#000" stroke-width="2" />
+                                        <path d="M125,175 L130,170 L135,180 L140,170 L145,180 L150,170 L155,180 L160,170 L165,180 L170,170 L175,175" fill="none" stroke="#000" stroke-width="2" />
+                                        
+                                        <!-- Connector wires to right -->
+                                        <line x1="225" y1="75" x2="225" y2="175" stroke="#000" stroke-width="2" />
+                                        
+                                        <!-- Text Labels -->
+                                        <text x="150" y="60" text-anchor="middle" font-size="12">R1</text>
+                                        <text x="150" y="110" text-anchor="middle" font-size="12">R2</text>
+                                        <text x="150" y="160" text-anchor="middle" font-size="12">R3</text>
+                                        <text x="50" y="145" text-anchor="middle" font-size="12">V</text>
+                                    </svg>
+                                </div>
+                                
+                                <h3>Key Characteristics of Parallel Circuits</h3>
+                                
+                                <div class="characteristics-grid">
+                                    <div class="characteristic-item">
+                                        <h4><i class="fas fa-bolt"></i> Current</h4>
+                                        <p>The current divides among the parallel branches.</p>
+                                        <div class="formula">
+                                            <p>I<sub>total</sub> = I<sub>1</sub> + I<sub>2</sub> + I<sub>3</sub> + ...</p>
+                                        </div>
+                                    </div>
+                                    
+                                    <div class="characteristic-item">
+                                        <h4><i class="fas fa-plug"></i> Voltage</h4>
+                                        <p>The voltage is the same across each parallel branch.</p>
+                                        <div class="formula">
+                                            <p>V<sub>total</sub> = V<sub>1</sub> = V<sub>2</sub> = V<sub>3</sub> = ...</p>
+                                        </div>
+                                    </div>
+                                    
+                                    <div class="characteristic-item">
+                                        <h4><i class="fas fa-random"></i> Resistance</h4>
+                                        <p>The reciprocal of the total resistance equals the sum of the reciprocals of the individual resistances.</p>
+                                        <div class="formula">
+                                            <p>1/R<sub>total</sub> = 1/R<sub>1</sub> + 1/R<sub>2</sub> + 1/R<sub>3</sub> + ...</p>
+                                        </div>
+                                        <p>Alternatively:</p>
+                                        <div class="formula">
+                                            <p>R<sub>total</sub> = 1 / (1/R<sub>1</sub> + 1/R<sub>2</sub> + 1/R<sub>3</sub> + ...)</p>
+                                        </div>
+                                    </div>
+                                    
+                                    <div class="characteristic-item">
+                                        <h4><i class="fas fa-exclamation-triangle"></i> Circuit Breaks</h4>
+                                        <p>If one component in a parallel circuit fails open, current still flows through the other branches.</p>
+                                    </div>
+                                </div>
+                                
+                                <div class="example-box">
+                                    <h3>Example Problem</h3>
+                                    <p>Calculate the total resistance of a parallel circuit containing three resistors: 10Ω, 20Ω, and 40Ω.</p>
+                                    <div class="solution">
+                                        <p>Using the formula: 1/R<sub>total</sub> = 1/R<sub>1</sub> + 1/R<sub>2</sub> + 1/R<sub>3</sub></p>
+                                        <p>1/R<sub>total</sub> = 1/10Ω + 1/20Ω + 1/40Ω = 0.1 + 0.05 + 0.025 = 0.175</p>
+                                        <p>R<sub>total</sub> = 1/0.175 = 5.71Ω</p>
+                                        <p>Therefore, the total resistance of the circuit is 5.71 ohms.</p>
+                                    </div>
+                                </div>
+                                
+                                <div class="parallel-calculator">
+                                    <h3>Parallel Resistance Calculator</h3>
+                                    <div class="resistor-inputs" id="parallel-resistor-inputs">
+                                        <div class="resistor-input">
+                                            <label for="parallel-r1">R1 (Ω):</label>
+                                            <input type="number" id="parallel-r1" placeholder="Enter resistance" value="10">
+                                        </div>
+                                        <div class="resistor-input">
+                                            <label for="parallel-r2">R2 (Ω):</label>
+                                            <input type="number" id="parallel-r2" placeholder="Enter resistance" value="20">
+                                        </div>
+                                    </div>
+                                    <div class="calculator-controls">
+                                        <button id="add-parallel-resistor" class="btn small"><i class="fas fa-plus"></i> Add Resistor</button>
+                                        <button id="remove-parallel-resistor" class="btn small"><i class="fas fa-minus"></i> Remove Resistor</button>
+                                        <button id="calculate-parallel" class="btn">Calculate Total Resistance</button>
+                                    </div>
+                                    <div class="calculator-result">
+                                        <p>Total Resistance: <span id="parallel-result">6.67Ω</span></p>
+                                    </div>
+                                </div>
+                            </section>
+                            
+                            <section id="combined-circuits">
+                                <h2>Combined Series-Parallel Circuits</h2>
+                                <p>Many real-world circuits combine both series and parallel elements to create more complex networks. Analyzing these circuits requires breaking them down into simpler series and parallel sections.</p>
+                                
+                                <div class="circuit-diagram">
+                                    <svg width="400" height="250" viewBox="0 0 400 250">
+                                        <!-- Battery -->
+                                        <line x1="50" y1="125" x2="50" y2="85" stroke="#000" stroke-width="2" />
+                                        <line x1="40" y1="85" x2="60" y2="85" stroke="#000" stroke-width="2" />
+                                        <line x1="35" y1="75" x2="65" y2="75" stroke="#000" stroke-width="2" />
+                                        
+                                        <!-- Main horizontal wires -->
+                                        <line x1="50" y1="75" x2="50" y2="25" stroke="#000" stroke-width="2" />
+                                        <line x1="50" y1="25" x2="350" y2="25" stroke="#000" stroke-width="2" />
+                                        <line x1="350" y1="25" x2="350" y2="225" stroke="#000" stroke-width="2" />
+                                        <line x1="350" y1="225" x2="50" y2="225" stroke="#000" stroke-width="2" />
+                                        <line x1="50" y1="225" x2="50" y2="125" stroke="#000" stroke-width="2" />
+                                        
+                                        <!-- R1 (series) -->
+                                        <line x1="100" y1="25" x2="100" y2="75" stroke="#000" stroke-width="2" />
+                                        <path d="M100,75 L105,70 L110,80 L115,70 L120,80 L125,70 L130,80 L135,70 L140,80 L145,70 L150,75" fill="none" stroke="#000" stroke-width="2" />
+                                        <line x1="150" y1="75" x2="150" y2="25" stroke="#000" stroke-width="2" />
+                                        <text x="125" y="95" text-anchor="middle" font-size="12">R1</text>
+                                        
+                                        <!-- Parallel section -->
+                                        <line x1="200" y1="25" x2="200" y2="75" stroke="#000" stroke-width="2" />
+                                        <line x1="200" y1="75" x2="200" y2="175" stroke="#000" stroke-width="2" />
+                                        <line x1="200" y1="175" x2="300" y2="175" stroke="#000" stroke-width="2" />
+                                        <line x1="200" y1="125" x2="300" y2="125" stroke="#000" stroke-width="2" />
+                                        <line x1="200" y1="75" x2="300" y2="75" stroke="#000" stroke-width="2" />
+                                        <line x1="300" y1="75" x2="300" y2="175" stroke="#000" stroke-width="2" />
+                                        <line x1="300" y1="25" x2="300" y2="75" stroke="#000" stroke-width="2" />
+                                        
+                                        <!-- Resistors in parallel -->
+                                        <path d="M225,75 L230,70 L235,80 L240,70 L245,80 L250,70 L255,80 L260,70 L265,80 L270,70 L275,75" fill="none" stroke="#000" stroke-width="2" />
+                                        <path d="M225,125 L230,120 L235,130 L240,120 L245,130 L250,120 L255,130 L260,120 L265,130 L270,120 L275,125" fill="none" stroke="#000" stroke-width="2" />
+                                        <path d="M225,175 L230,170 L235,180 L240,170 L245,180 L250,170 L255,180 L260,170 L265,180 L270,170 L275,175" fill="none" stroke="#000" stroke-width="2" />
+                                        
+                                        <!-- Text Labels -->
+                                        <text x="250" y="60" text-anchor="middle" font-size="12">R2</text>
+                                        <text x="250" y="110" text-anchor="middle" font-size="12">R3</text>
+                                        <text x="250" y="160" text-anchor="middle" font-size="12">R4</text>
+                                        <text x="50" y="145" text-anchor="middle" font-size="12">V</text>
+                                    </svg>
+                                </div>
+                                
+                                <h3>Analysis Strategy</h3>
+                                <p>When analyzing combined series-parallel circuits, follow these steps:</p>
+                                
+                                <ol class="analysis-steps">
+                                    <li>Identify the series and parallel portions of the circuit</li>
+                                    <li>Reduce parallel sections to their equivalent resistances</li>
+                                    <li>Calculate the total resistance by adding series elements</li>
+                                    <li>Use Ohm's Law to find currents and voltages as needed</li>
+                                </ol>
+                                
+                                <div class="example-box">
+                                    <h3>Example Problem</h3>
+                                    <p>In the circuit above, calculate the total resistance if R1 = 10Ω, and the parallel section has resistors R2 = 20Ω, R3 = 30Ω, and R4 = 60Ω.</p>
+                                    <div class="solution">
+                                        <p>Step 1: Calculate the equivalent resistance of the parallel section (R2, R3, and R4).</p>
+                                        <p>1/R<sub>parallel</sub> = 1/20Ω + 1/30Ω + 1/60Ω = 0.05 + 0.033 + 0.017 = 0.1</p>
+                                        <p>R<sub>parallel</sub> = 1/0.1 = 10Ω</p>
+                                        <p>Step 2: Add the series resistor (R1) to find the total resistance.</p>
+                                        <p>R<sub>total</sub> = R1 + R<sub>parallel</sub> = 10Ω + 10Ω = 20Ω</p>
+                                        <p>Therefore, the total resistance of the circuit is 20 ohms.</p>
+                                    </div>
+                                </div>
+                            </section>
+                            
+                            <div class="next-section">
+                                <p>Ready to see DC circuits in action? Check out real-world applications and interactive examples!</p>
+                                <a href="applications.html" class="btn primary">Explore Applications</a>
+                            </div>
+                        </article>
+                    </div>
+                    
+                    <aside class="sidebar">
+                        <div class="sidebar-widget">
+                            <h3>Quick Navigation</h3>
+                            <ul>
+                                <li><a href="#ohms-law">Ohm's Law</a></li>
+                                <li><a href="#series-circuits">Series Circuits</a></li>
+                                <li><a href="#parallel-circuits">Parallel Circuits</a></li>
+                                <li><a href="#combined-circuits">Combined Circuits</a></li>
+                            </ul>
+                        </div>
+                        
+                        <div class="sidebar-widget">
+                            <h3>Key Formulas</h3>
+                            <div class="formula">
+                                <p>V = I × R</p>
+                                <span>Ohm's Law</span>
+                            </div>
+                            <div class="formula">
+                                <p>R<sub>series</sub> = R<sub>1</sub> + R<sub>2</sub> + ...</p>
+                                <span>Series Resistance</span>
+                            </div>
+                            <div class="formula">
+                                <p>1/R<sub>parallel</sub> = 1/R<sub>1</sub> + 1/R<sub>2</sub> + ...</p>
+                                <span>Parallel Resistance</span>
+                            </div>
+                            <div class="formula">
+                                <p>P = V × I</p>
+                                <span>Power</span>
+                            </div>
+                        </div>
+                        
+                        <div class="sidebar-widget">
+                            <h3>Related Topics</h3>
+                            <ul>
+                                <li><a href="applications.html#household">Household Circuits</a></li>
+                                <li><a href="applications.html#electronic-devices">Electronic Devices</a></li>
+                                <li><a href="applications.html#automotive">Automotive Applications</a></li>
+                            </ul>
+                        </div>
+                    </aside>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer-content">
+            <div class="footer-logo">
+                <svg width="30" height="30" viewBox="0 0 40 40">
+                    <circle cx="20" cy="20" r="15" fill="#008080" />
+                    <text x="20" y="25" font-size="14" text-anchor="middle" fill="#fff">DC</text>
+                </svg>
+                <h3>DC Circuits</h3>
+            </div>
+            <div class="footer-links">
+                <div class="footer-col">
+                    <h4>Learn</h4>
+                    <ul>
+                        <li><a href="introduction.html">Introduction</a></li>
+                        <li><a href="key-concepts.html">Key Concepts</a></li>
+                        <li><a href="applications.html">Applications</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Resources</h4>
+                    <ul>
+                        <li><a href="references.html">References</a></li>
+                        <li><a href="references.html#books">Recommended Books</a></li>
+                        <li><a href="references.html#websites">Online Resources</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2023 DC Circuits Educational Website. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+    <script src="js/circuit-simulator.js"></script>
+</body>
+</html>

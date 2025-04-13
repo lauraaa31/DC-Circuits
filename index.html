@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DC Circuits | Home</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <svg width="40" height="40" viewBox="0 0 40 40">
+                <circle cx="20" cy="20" r="15" fill="#008080" />
+                <text x="20" y="25" font-size="14" text-anchor="middle" fill="#fff">DC</text>
+            </svg>
+            <h1>DC Circuits</h1>
+        </div>
+        <nav>
+            <div class="menu-toggle">
+                <i class="fas fa-bars"></i>
+            </div>
+            <ul class="nav-links">
+                <li class="active"><a href="index.html">Home</a></li>
+                <li><a href="introduction.html">Introduction</a></li>
+                <li><a href="key-concepts.html">Key Concepts</a></li>
+                <li><a href="applications.html">Applications</a></li>
+                <li><a href="references.html">References</a></li>
+              
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="hero">
+            <div class="hero-content">
+                <h2>Understanding DC Circuits</h2>
+                <p>Explore the fundamental principles of direct current circuits and learn how to analyze series and parallel resistance calculations.</p>
+                <div class="hero-buttons">
+                    <a href="introduction.html" class="btn primary">Get Started</a>
+                    <a href="key-concepts.html" class="btn secondary">Key Concepts</a>
+                </div>
+            </div>
+            <div class="hero-image">
+                <!-- SVG Circuit Diagram -->
+                <svg width="300" height="200" viewBox="0 0 300 200">
+                    <!-- Battery -->
+                    <line x1="50" y1="100" x2="50" y2="40" stroke="#000" stroke-width="2" />
+                    <line x1="40" y1="40" x2="60" y2="40" stroke="#000" stroke-width="2" />
+                    <line x1="35" y1="30" x2="65" y2="30" stroke="#000" stroke-width="2" />
+                    
+                    <!-- Wires -->
+                    <line x1="50" y1="30" x2="50" y2="10" stroke="#000" stroke-width="2" />
+                    <line x1="50" y1="10" x2="150" y2="10" stroke="#000" stroke-width="2" />
+                    <line x1="150" y1="10" x2="150" y2="40" stroke="#000" stroke-width="2" />
+                    <line x1="150" y1="60" x2="150" y2="100" stroke="#000" stroke-width="2" />
+                    <line x1="150" y1="100" x2="250" y2="100" stroke="#000" stroke-width="2" />
+                    <line x1="250" y1="100" x2="250" y2="10" stroke="#000" stroke-width="2" />
+                    <line x1="250" y1="10" x2="150" y2="10" stroke="#000" stroke-width="2" />
+                    <line x1="50" y1="100" x2="150" y2="100" stroke="#000" stroke-width="2" />
+                    
+                    <!-- Resistor -->
+                    <path d="M150,40 L150,40 L145,42 L155,45 L145,48 L155,51 L145,54 L155,57 L150,60" fill="none" stroke="#000" stroke-width="2" />
+                    
+                    <!-- Text Labels -->
+                    <text x="30" y="65" text-anchor="middle" font-size="12">Battery</text>
+                    <text x="150" y="75" text-anchor="middle" font-size="12">Resistor</text>
+                    <text x="250" y="65" text-anchor="middle" font-size="12">Load</text>
+                </svg>
+            </div>
+        </section>
+
+        <section class="features">
+            <h2 class="section-title">Featured Topics</h2>
+            <div class="feature-cards">
+                <div class="card">
+                    <i class="fas fa-bolt"></i>
+                    <h3>Ohm's Law</h3>
+                    <p>Learn the relationship between voltage, current, and resistance in DC circuits.</p>
+                    <a href="key-concepts.html#ohms-law" class="btn small">Learn More</a>
+                </div>
+                <div class="card">
+                    <i class="fas fa-link"></i>
+                    <h3>Series Circuits</h3>
+                    <p>Understand how resistance adds up in series connections and calculate total resistance.</p>
+                    <a href="key-concepts.html#series-circuits" class="btn small">Learn More</a>
+                </div>
+                <div class="card">
+                    <i class="fas fa-code-branch"></i>
+                    <h3>Parallel Circuits</h3>
+                    <p>Discover how to calculate equivalent resistance in parallel connections.</p>
+                    <a href="key-concepts.html#parallel-circuits" class="btn small">Learn More</a>
+                </div>
+                <div class="card">
+                    <i class="fas fa-calculator"></i>
+                    <h3>Interactive Calculators</h3>
+                    <p>Use our interactive tools to solve series and parallel circuit problems.</p>
+                    <a href="applications.html#calculators" class="btn small">Try Now</a>
+                </div>
+            </div>
+        </section>
+
+        <section class="interactive-demo">
+            <h2 class="section-title">Try It Yourself</h2>
+            <p>Adjust the resistance values to see how series and parallel configurations affect the total resistance.</p>
+            
+            <div class="demo-container">
+                <div class="demo-controls">
+                    <div class="control-group">
+                        <h3>Series Circuit</h3>
+                        <div class="circuit-controls">
+                            <div class="control">
+                                <label for="series-r1">R1 (Ω):</label>
+                                <input type="number" id="series-r1" min="1" max="1000" value="100">
+                            </div>
+                            <div class="control">
+                                <label for="series-r2">R2 (Ω):</label>
+                                <input type="number" id="series-r2" min="1" max="1000" value="200">
+                            </div>
+                            <div class="control">
+                                <label for="series-r3">R3 (Ω):</label>
+                                <input type="number" id="series-r3" min="1" max="1000" value="300">
+                            </div>
+                        </div>
+                        <div class="result">
+                            <p>Total Resistance: <span id="series-total">600</span> Ω</p>
+                            <p class="formula">R<sub>total</sub> = R1 + R2 + R3</p>
+                        </div>
+                    </div>
+                    
+                    <div class="control-group">
+                        <h3>Parallel Circuit</h3>
+                        <div class="circuit-controls">
+                            <div class="control">
+                                <label for="parallel-r1">R1 (Ω):</label>
+                                <input type="number" id="parallel-r1" min="1" max="1000" value="100">
+                            </div>
+                            <div class="control">
+                                <label for="parallel-r2">R2 (Ω):</label>
+                                <input type="number" id="parallel-r2" min="1" max="1000" value="200">
+                            </div>
+                            <div class="control">
+                                <label for="parallel-r3">R3 (Ω):</label>
+                                <input type="number" id="parallel-r3" min="1" max="1000" value="300">
+                            </div>
+                        </div>
+                        <div class="result">
+                            <p>Total Resistance: <span id="parallel-total">54.55</span> Ω</p>
+                            <p class="formula">1/R<sub>total</sub> = 1/R1 + 1/R2 + 1/R3</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="demo-visualization">
+                    <div class="circuit-diagram">
+                        <div class="series-circuit">
+                            <svg width="400" height="150" viewBox="0 0 400 150">
+                                <!-- Battery -->
+                                <line x1="20" y1="75" x2="20" y2="35" stroke="#000" stroke-width="2" />
+                                <line x1="10" y1="35" x2="30" y2="35" stroke="#000" stroke-width="2" />
+                                <line x1="5" y1="25" x2="35" y2="25" stroke="#000" stroke-width="2" />
+                                
+                                <!-- Wires -->
+                                <line x1="20" y1="25" x2="20" y2="10" stroke="#000" stroke-width="2" />
+                                <line x1="20" y1="10" x2="70" y2="10" stroke="#000" stroke-width="2" />
+                                <line x1="70" y1="10" x2="70" y2="75" stroke="#000" stroke-width="2" />
+                                <line x1="70" y1="75" x2="120" y2="75" stroke="#000" stroke-width="2" />
+                                <line x1="170" y1="75" x2="220" y2="75" stroke="#000" stroke-width="2" />
+                                <line x1="270" y1="75" x2="320" y2="75" stroke="#000" stroke-width="2" />
+                                <line x1="370" y1="75" x2="380" y2="75" stroke="#000" stroke-width="2" />
+                                <line x1="380" y1="75" x2="380" y2="10" stroke="#000" stroke-width="2" />
+                                <line x1="380" y1="10" x2="20" y2="10" stroke="#000" stroke-width="2" />
+                                <line x1="20" y1="75" x2="70" y2="75" stroke="#000" stroke-width="2" />
+                                
+                                <!-- Resistors -->
+                                <path d="M120,75 L125,70 L130,80 L135,70 L140,80 L145,70 L150,80 L155,70 L160,80 L165,70 L170,75" fill="none" stroke="#000" stroke-width="2" id="series-r1-svg" />
+                                <path d="M220,75 L225,70 L230,80 L235,70 L240,80 L245,70 L250,80 L255,70 L260,80 L265,70 L270,75" fill="none" stroke="#000" stroke-width="2" id="series-r2-svg" />
+                                <path d="M320,75 L325,70 L330,80 L335,70 L340,80 L345,70 L350,80 L355,70 L360,80 L365,70 L370,75" fill="none" stroke="#000" stroke-width="2" id="series-r3-svg" />
+                                
+                                <!-- Text Labels -->
+                                <text x="145" y="100" text-anchor="middle" font-size="12" id="series-r1-label">100Ω</text>
+                                <text x="245" y="100" text-anchor="middle" font-size="12" id="series-r2-label">200Ω</text>
+                                <text x="345" y="100" text-anchor="middle" font-size="12" id="series-r3-label">300Ω</text>
+                                <text x="20" y="95" text-anchor="middle" font-size="12">Battery</text>
+                            </svg>
+                        </div>
+                        
+                        <div class="parallel-circuit">
+                            <svg width="300" height="250" viewBox="0 0 300 250">
+                                <!-- Battery -->
+                                <line x1="20" y1="125" x2="20" y2="85" stroke="#000" stroke-width="2" />
+                                <line x1="10" y1="85" x2="30" y2="85" stroke="#000" stroke-width="2" />
+                                <line x1="5" y1="75" x2="35" y2="75" stroke="#000" stroke-width="2" />
+                                
+                                <!-- Wires -->
+                                <line x1="20" y1="75" x2="20" y2="25" stroke="#000" stroke-width="2" />
+                                <line x1="20" y1="25" x2="50" y2="25" stroke="#000" stroke-width="2" />
+                                <line x1="50" y1="25" x2="50" y2="225" stroke="#000" stroke-width="2" />
+                                <line x1="50" y1="225" x2="20" y2="225" stroke="#000" stroke-width="2" />
+                                <line x1="20" y1="225" x2="20" y2="125" stroke="#000" stroke-width="2" />
+                                
+                                <!-- Branching points -->
+                                <line x1="50" y1="75" x2="250" y2="75" stroke="#000" stroke-width="2" />
+                                <line x1="50" y1="125" x2="250" y2="125" stroke="#000" stroke-width="2" />
+                                <line x1="50" y1="175" x2="250" y2="175" stroke="#000" stroke-width="2" />
+                                
+                                <!-- Resistors -->
+                                <path d="M125,75 L130,70 L135,80 L140,70 L145,80 L150,70 L155,80 L160,70 L165,80 L170,70 L175,75" fill="none" stroke="#000" stroke-width="2" id="parallel-r1-svg" />
+                                <path d="M125,125 L130,120 L135,130 L140,120 L145,130 L150,120 L155,130 L160,120 L165,130 L170,120 L175,125" fill="none" stroke="#000" stroke-width="2" id="parallel-r2-svg" />
+                                <path d="M125,175 L130,170 L135,180 L140,170 L145,180 L150,170 L155,180 L160,170 L165,180 L170,170 L175,175" fill="none" stroke="#000" stroke-width="2" id="parallel-r3-svg" />
+                                
+                                <!-- Connector wires to right -->
+                                <line x1="250" y1="75" x2="250" y2="175" stroke="#000" stroke-width="2" />
+                                
+                                <!-- Text Labels -->
+                                <text x="150" y="60" text-anchor="middle" font-size="12" id="parallel-r1-label">100Ω</text>
+                                <text x="150" y="110" text-anchor="middle" font-size="12" id="parallel-r2-label">200Ω</text>
+                                <text x="150" y="160" text-anchor="middle" font-size="12" id="parallel-r3-label">300Ω</text>
+                                <text x="20" y="145" text-anchor="middle" font-size="12">Battery</text>
+                            </svg>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer-content">
+            <div class="footer-logo">
+                <svg width="30" height="30" viewBox="0 0 40 40">
+                    <circle cx="20" cy="20" r="15" fill="#008080" />
+                    <text x="20" y="25" font-size="14" text-anchor="middle" fill="#fff">DC</text>
+                </svg>
+                <h3>DC Circuits</h3>
+            </div>
+            <div class="footer-links">
+                <div class="footer-col">
+                    <h4>Learn</h4>
+                    <ul>
+                        <li><a href="introduction.html">Introduction</a></li>
+                        <li><a href="key-concepts.html">Key Concepts</a></li>
+                        <li><a href="applications.html">Applications</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Resources</h4>
+                    <ul>
+                        <li><a href="references.html">References</a></li>
+                        <li><a href="references.html#books">Recommended Books</a></li>
+                        <li><a href="references.html#websites">Online Resources</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2025 DC Circuits Educational Website. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+    <script src="js/circuit-simulator.js"></script>
+</body>
+</html>

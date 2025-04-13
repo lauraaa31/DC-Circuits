@@ -1,0 +1,606 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DC Circuits | Applications</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <svg width="40" height="40" viewBox="0 0 40 40">
+                <circle cx="20" cy="20" r="15" fill="#008080" />
+                <text x="20" y="25" font-size="14" text-anchor="middle" fill="#fff">DC</text>
+            </svg>
+            <h1>DC Circuits</h1>
+        </div>
+        <nav>
+            <div class="menu-toggle">
+                <i class="fas fa-bars"></i>
+            </div>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="introduction.html">Introduction</a></li>
+                <li><a href="key-concepts.html">Key Concepts</a></li>
+                <li class="active"><a href="applications.html">Applications</a></li>
+                <li><a href="references.html">References</a></li>
+               
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <div class="page-banner">
+            <h2>Applications of DC Circuits</h2>
+        </div>
+
+        <section class="content-section">
+            <div class="container">
+                <div class="content-with-sidebar">
+                    <div class="main-content">
+                        <article>
+                            <p class="intro-text">DC circuits are fundamental to many technologies and devices we use every day. This page explores real-world applications and provides interactive examples to help solidify your understanding of DC circuit principles.</p>
+                            
+                            <section id="household">
+                                <h2>Household Applications</h2>
+                                <p>While most household power is delivered as AC (alternating current), many devices within our homes convert AC to DC for internal use. Here are some common household applications of DC circuits:</p>
+                                
+                                <div class="application-grid">
+                                    <div class="application-item">
+                                        <i class="fas fa-mobile-alt"></i>
+                                        <h3>Portable Electronics</h3>
+                                        <p>Smartphones, tablets, laptops, and other portable devices use DC power from batteries or AC adapters. These devices contain complex DC circuits for power management, signal processing, and charging.</p>
+                                    </div>
+                                    
+                                    <div class="application-item">
+                                        <i class="fas fa-lightbulb"></i>
+                                        <h3>LED Lighting</h3>
+                                        <p>LED lights operate on DC current. When you use LED bulbs in standard AC fixtures, a small circuit inside the bulb converts AC to DC. This makes LED lighting more energy-efficient than traditional incandescent bulbs.</p>
+                                    </div>
+                                    
+                                    <div class="application-item">
+                                        <i class="fas fa-tv"></i>
+                                        <h3>Home Entertainment</h3>
+                                        <p>Televisions, stereo systems, and gaming consoles all use DC power internally. Power supplies in these devices convert household AC power to the appropriate DC voltages for different components.</p>
+                                    </div>
+                                    
+                                    <div class="application-item">
+                                        <i class="fas fa-fan"></i>
+                                        <h3>Smart Home Devices</h3>
+                                        <p>Smart thermostats, doorbells, security cameras, and other IoT devices typically run on low-voltage DC power, often delivered through USB cables or dedicated power adapters.</p>
+                                    </div>
+                                </div>
+                                
+                                <div class="example-circuit">
+                                    <h3>Example: Multi-Room LED Lighting Circuit</h3>
+                                    <p>In this example, we'll examine a DC circuit powering LED lights in multiple rooms of a house. The circuit uses both series and parallel configurations to meet different lighting needs.</p>
+                                    
+                                    <div class="circuit-visualization">
+                                        <svg width="500" height="300" viewBox="0 0 500 300">
+                                            <!-- Power Supply -->
+                                            <rect x="20" y="130" width="60" height="40" fill="#008080" />
+                                            <text x="50" y="155" text-anchor="middle" fill="#fff">12V DC</text>
+                                            
+                                            <!-- Main wires -->
+                                            <line x1="80" y1="150" x2="120" y2="150" stroke="#000" stroke-width="2" />
+                                            <line x1="20" y1="100" x2="480" y2="100" stroke="#000" stroke-width="2" />
+                                            <line x1="20" y1="200" x2="480" y2="200" stroke="#000" stroke-width="2" />
+                                            <line x1="20" y1="100" x2="20" y2="130" stroke="#000" stroke-width="2" />
+                                            <line x1="20" y1="170" x2="20" y2="200" stroke="#000" stroke-width="2" />
+                                            
+                                            <!-- Room 1: Kitchen (Parallel) -->
+                                            <rect x="120" y="50" width="100" height="70" fill="none" stroke="#008080" stroke-width="2" />
+                                            <text x="170" y="40" text-anchor="middle" font-size="14">Kitchen</text>
+                                            
+                                            <line x1="120" y1="150" x2="140" y2="150" stroke="#000" stroke-width="2" />
+                                            <line x1="140" y1="150" x2="140" y2="100" stroke="#000" stroke-width="2" />
+                                            <line x1="170" y1="100" x2="170" y2="70" stroke="#000" stroke-width="2" />
+                                            <line x1="200" y1="100" x2="200" y2="70" stroke="#000" stroke-width="2" />
+                                            <line x1="140" y1="70" x2="140" y2="100" stroke="#000" stroke-width="2" />
+                                            
+                                            <!-- LED symbols for Kitchen -->
+                                            <circle cx="140" cy="70" r="7" fill="#00FFFF" stroke="#000" />
+                                            <text x="140" y="85" text-anchor="middle" font-size="10">3W</text>
+                                            
+                                            <circle cx="170" cy="70" r="7" fill="#00FFFF" stroke="#000" />
+                                            <text x="170" y="85" text-anchor="middle" font-size="10">3W</text>
+                                            
+                                            <circle cx="200" cy="70" r="7" fill="#00FFFF" stroke="#000" />
+                                            <text x="200" y="85" text-anchor="middle" font-size="10">3W</text>
+                                            
+                                            <!-- Room 2: Living Room (Series-Parallel) -->
+                                            <rect x="250" y="50" width="100" height="70" fill="none" stroke="#008080" stroke-width="2" />
+                                            <text x="300" y="40" text-anchor="middle" font-size="14">Living Room</text>
+                                            
+                                            <line x1="220" y1="150" x2="270" y2="150" stroke="#000" stroke-width="2" />
+                                            <line x1="270" y1="150" x2="270" y2="100" stroke="#000" stroke-width="2" />
+                                            
+                                            <!-- LED strip (series) -->
+                                            <line x1="270" y1="70" x2="290" y2="70" stroke="#000" stroke-width="2" />
+                                            <circle cx="290" cy="70" r="5" fill="#00FFFF" stroke="#000" />
+                                            <line x1="290" y1="70" x2="310" y2="70" stroke="#000" stroke-width="2" />
+                                            <circle cx="310" cy="70" r="5" fill="#00FFFF" stroke="#000" />
+                                            <line x1="310" y1="70" x2="330" y2="70" stroke="#000" stroke-width="2" />
+                                            <text x="300" y="85" text-anchor="middle" font-size="10">LED Strip (5W)</text>
+                                            
+                                            <!-- Room 3: Bedroom -->
+                                            <rect x="380" y="50" width="100" height="70" fill="none" stroke="#008080" stroke-width="2" />
+                                            <text x="430" y="40" text-anchor="middle" font-size="14">Bedroom</text>
+                                            
+                                            <line x1="350" y1="150" x2="420" y2="150" stroke="#000" stroke-width="2" />
+                                            <line x1="420" y1="150" x2="420" y2="100" stroke="#000" stroke-width="2" />
+                                            
+                                            <!-- Dimmer -->
+                                            <rect x="410" y="120" width="20" height="10" fill="none" stroke="#000" />
+                                            <text x="420" y="140" text-anchor="middle" font-size="10">Dimmer</text>
+                                            
+                                            <!-- Ceiling light -->
+                                            <circle cx="420" cy="70" r="10" fill="#00FFFF" stroke="#000" />
+                                            <line x1="414" y1="64" x2="426" y2="76" stroke="#000" stroke-width="1" />
+                                            <line x1="426" y1="64" x2="414" y2="76" stroke="#000" stroke-width="1" />
+                                            <text x="420" y="90" text-anchor="middle" font-size="10">7W</text>
+                                            
+                                            <!-- Resistors -->
+                                            <path d="M200,150 L205,145 L210,155 L215,145 L220,155 L225,145 L230,155 L235,145 L240,155 L245,145 L250,150" fill="none" stroke="#000" stroke-width="2" />
+                                            <text x="225" y="170" text-anchor="middle" font-size="10">Current Limiter</text>
+                                            
+                                            <path d="M330,150 L335,145 L340,155 L345,145 L350,155 L355,145 L360,155 L365,145 L370,155 L375,145 L380,150" fill="none" stroke="#000" stroke-width="2" />
+                                            <text x="355" y="170" text-anchor="middle" font-size="10">Current Limiter</text>
+                                            
+                                            <!-- Labels -->
+                                            <text x="40" y="250" font-size="12">Component Summary:</text>
+                                            <text x="50" y="270" font-size="12">• Kitchen: 3 parallel LEDs (3W each) = 9W total</text>
+                                            <text x="50" y="290" font-size="12">• Living Room: LED strip in series (5W)</text>
+                                            <text x="270" y="290" font-size="12">• Bedroom: Single dimmable LED (7W)</text>
+                                        </svg>
+                                    </div>
+                                    
+                                    <div class="circuit-analysis">
+                                        <h4>Circuit Analysis:</h4>
+                                        <ul>
+                                            <li><strong>Kitchen:</strong> Uses a parallel configuration where each light receives the full 12V supply. This allows any light to operate independently of the others.</li>
+                                            <li><strong>Living Room:</strong> Uses a series configuration for the LED strip. The voltage is divided across each LED in the strip.</li>
+                                            <li><strong>Bedroom:</strong> Uses a dimmer to adjust the current, controlling the brightness of the LED light.</li>
+                                        </ul>
+                                        <p>Total power consumption: 9W + 5W + 7W = 21W</p>
+                                        <p>With a 12V supply, the system draws approximately I = P/V = 21W/12V = 1.75A of current.</p>
+                                    </div>
+                                </div>
+                            </section>
+                            
+                            <section id="electronic-devices">
+                                <h2>Electronic Devices</h2>
+                                <p>Modern electronic devices rely heavily on DC circuits for their operation. Here are some examples:</p>
+                                
+                                <div class="application-grid">
+                                    <div class="application-item">
+                                        <i class="fas fa-microchip"></i>
+                                        <h3>Integrated Circuits</h3>
+                                        <p>The heart of modern electronics, ICs contain thousands to billions of transistors arranged in complex DC circuits. These circuits perform functions like signal amplification, logic operations, and data processing.</p>
+                                    </div>
+                                    
+                                    <div class="application-item">
+                                        <i class="fas fa-memory"></i>
+                                        <h3>Memory Devices</h3>
+                                        <p>RAM, ROM, flash drives, and SSDs all use DC circuits to store and retrieve data. Different voltage levels represent binary data (0s and 1s) in these storage devices.</p>
+                                    </div>
+                                    
+                                    <div class="application-item">
+                                        <i class="fas fa-satellite-dish"></i>
+                                        <h3>Communication Systems</h3>
+                                        <p>Transmitters, receivers, and signal processing circuits in radios, cell phones, and satellite systems use DC power to generate, amplify, and decode electromagnetic signals.</p>
+                                    </div>
+                                    
+                                    <div class="application-item">
+                                        <i class="fas fa-sensor"></i>
+                                        <h3>Sensors and Detectors</h3>
+                                        <p>Temperature sensors, light detectors, motion sensors, and similar devices use DC circuits to convert physical phenomena into electrical signals that can be measured and processed.</p>
+                                    </div>
+                                </div>
+                            </section>
+                            
+                            <section id="automotive">
+                                <h2>Automotive Applications</h2>
+                                <p>Modern vehicles are packed with DC circuits powered by the car's battery and charging system:</p>
+                                
+                                <div class="application-grid">
+                                    <div class="application-item">
+                                        <i class="fas fa-car-battery"></i>
+                                        <h3>Vehicle Electrical System</h3>
+                                        <p>Cars typically use a 12V DC electrical system powered by a battery, with an alternator that produces AC power which is then rectified to DC to charge the battery during operation.</p>
+                                    </div>
+                                    
+                                    <div class="application-item">
+                                        <i class="fas fa-tachometer-alt"></i>
+                                        <h3>Engine Control Units</h3>
+                                        <p>The ECU monitors engine parameters and controls fuel injection, ignition timing, and other functions using complex DC circuits and microprocessors.</p>
+                                    </div>
+                                    
+                                    <div class="application-item">
+                                        <i class="fas fa-music"></i>
+                                        <h3>Entertainment Systems</h3>
+                                        <p>Car audio, navigation, and video systems all rely on DC power from the vehicle's electrical system, often with voltage regulators to provide stable power.</p>
+                                    </div>
+                                    
+                                    <div class="application-item">
+                                        <i class="fas fa-lightbulb"></i>
+                                        <h3>Lighting Systems</h3>
+                                        <p>Headlights, tail lights, interior lights, and dashboard illumination all operate on DC power, with various series and parallel arrangements depending on the application.</p>
+                                    </div>
+                                </div>
+                                
+                                <div class="example-circuit">
+                                    <h3>Example: Basic Automotive Lighting Circuit</h3>
+                                    <p>This simplified diagram shows how headlights and tail lights are typically wired in a vehicle's DC electrical system:</p>
+                                    
+                                    <div class="circuit-visualization">
+                                        <svg width="500" height="250" viewBox="0 0 500 250">
+                                            <!-- Battery -->
+                                            <rect x="50" y="100" width="40" height="60" fill="#000" />
+                                            <rect x="55" y="90" width="30" height="10" fill="#000" />
+                                            <text x="70" y="130" text-anchor="middle" fill="#fff">12V</text>
+                                            <text x="70" y="145" text-anchor="middle" fill="#fff">Battery</text>
+                                            
+                                            <!-- Ground -->
+                                            <line x1="50" y1="180" x2="120" y2="180" stroke="#000" stroke-width="2" />
+                                            <line x1="70" y1="180" x2="70" y2="200" stroke="#000" stroke-width="2" />
+                                            <line x1="60" y1="200" x2="80" y2="200" stroke="#000" stroke-width="2" />
+                                            <line x1="65" y1="205" x2="75" y2="205" stroke="#000" stroke-width="2" />
+                                            <line x1="68" y1="210" x2="72" y2="210" stroke="#000" stroke-width="2" />
+                                            
+                                            <!-- Main positive wire -->
+                                            <line x1="90" y1="120" x2="120" y2="120" stroke="red" stroke-width="2" />
+                                            <line x1="120" y1="120" x2="120" y2="60" stroke="red" stroke-width="2" />
+                                            <line x1="120" y1="60" x2="400" y2="60" stroke="red" stroke-width="2" />
+                                            
+                                            <!-- Fuse box -->
+                                            <rect x="120" y="120" width="60" height="40" fill="#008080" />
+                                            <text x="150" y="145" text-anchor="middle" fill="#fff">Fuse Box</text>
+                                            
+                                            <!-- Headlight switch -->
+                                            <circle cx="220" cy="100" r="10" fill="#fff" stroke="#000" />
+                                            <line x1="180" y1="140" x2="210" y2="100" stroke="#000" stroke-width="2" />
+                                            <text x="220" y="80" text-anchor="middle" font-size="12">Headlight</text>
+                                            <text x="220" y="95" text-anchor="middle" font-size="12">Switch</text>
+                                            
+                                            <!-- Tail light switch -->
+                                            <circle cx="300" cy="100" r="10" fill="#fff" stroke="#000" />
+                                            <line x1="260" y1="140" x2="290" y2="100" stroke="#000" stroke-width="2" />
+                                            <text x="300" y="80" text-anchor="middle" font-size="12">Tail Light</text>
+                                            <text x="300" y="95" text-anchor="middle" font-size="12">Switch</text>
+                                            
+                                            <!-- Lighting circuits -->
+                                            <line x1="230" y1="100" x2="250" y2="100" stroke="#000" stroke-width="2" />
+                                            <line x1="250" y1="100" x2="250" y2="60" stroke="#000" stroke-width="2" />
+                                            
+                                            <line x1="310" y1="100" x2="330" y2="100" stroke="#000" stroke-width="2" />
+                                            <line x1="330" y1="100" x2="330" y2="60" stroke="#000" stroke-width="2" />
+                                            
+                                            <!-- Headlights (parallel) -->
+                                            <circle cx="200" cy="60" r="15" fill="#FFFFCC" stroke="#000" />
+                                            <line x1="194" y1="54" x2="206" y2="66" stroke="#000" stroke-width="1" />
+                                            <line x1="206" y1="54" x2="194" y2="66" stroke="#000" stroke-width="1" />
+                                            <text x="200" y="40" text-anchor="middle" font-size="12">Left</text>
+                                            
+                                            <circle cx="250" cy="60" r="15" fill="#FFFFCC" stroke="#000" />
+                                            <line x1="244" y1="54" x2="256" y2="66" stroke="#000" stroke-width="1" />
+                                            <line x1="256" y1="54" x2="244" y2="66" stroke="#000" stroke-width="1" />
+                                            <text x="250" y="40" text-anchor="middle" font-size="12">Right</text>
+                                            
+                                            <!-- Tail lights (parallel) -->
+                                            <circle cx="330" cy="60" r="10" fill="#FF6666" stroke="#000" />
+                                            <line x1="326" y1="56" x2="334" y2="64" stroke="#000" stroke-width="1" />
+                                            <line x1="334" y1="56" x2="326" y2="64" stroke="#000" stroke-width="1" />
+                                            <text x="330" y="40" text-anchor="middle" font-size="12">Tail Lights</text>
+                                            
+                                            <circle cx="370" cy="60" r="10" fill="#FF6666" stroke="#000" />
+                                            <line x1="366" y1="56" x2="374" y2="64" stroke="#000" stroke-width="1" />
+                                            <line x1="374" y1="56" x2="366" y2="64" stroke="#000" stroke-width="1" />
+                                            
+                                            <!-- Ground connections -->
+                                            <line x1="200" y1="75" x2="200" y2="180" stroke="#000" stroke-width="2" />
+                                            <line x1="250" y1="75" x2="250" y2="180" stroke="#000" stroke-width="2" />
+                                            <line x1="330" y1="70" x2="330" y2="180" stroke="#000" stroke-width="2" />
+                                            <line x1="370" y1="70" x2="370" y2="180" stroke="#000" stroke-width="2" />
+                                            <line x1="120" y1="180" x2="400" y2="180" stroke="#000" stroke-width="2" />
+                                            
+                                            <!-- Fuses -->
+                                            <rect x="160" y="120" width="20" height="10" fill="none" stroke="#000" />
+                                            <line x1="160" y1="125" x2="180" y2="125" stroke="#000" stroke-width="1" />
+                                            <line x1="180" y1="125" x2="180" y2="140" stroke="#000" stroke-width="2" />
+                                            
+                                            <rect x="240" y="120" width="20" height="10" fill="none" stroke="#000" />
+                                            <line x1="240" y1="125" x2="260" y2="125" stroke="#000" stroke-width="1" />
+                                            <line x1="260" y1="125" x2="260" y2="140" stroke="#000" stroke-width="2" />
+                                            
+                                            <!-- Labels -->
+                                            <text x="40" y="230" font-size="12">• Headlights: Two 55W bulbs in parallel (110W total)</text>
+                                            <text x="300" y="230" font-size="12">• Tail lights: Four 5W bulbs in parallel (20W total)</text>
+                                        </svg>
+                                    </div>
+                                    
+                                    <div class="circuit-analysis">
+                                        <h4>Circuit Analysis:</h4>
+                                        <ul>
+                                            <li><strong>Power Source:</strong> 12V battery with alternator charging system</li>
+                                            <li><strong>Protection:</strong> Fuses for each lighting circuit protect against shorts and overloads</li>
+                                            <li><strong>Headlights:</strong> Connected in parallel so each receives full 12V and operates independently</li>
+                                            <li><strong>Tail Lights:</strong> Also in parallel configuration for reliability (if one fails, others remain functional)</li>
+                                        </ul>
+                                        <p>Current draw calculation:</p>
+                                        <p>Headlights: I = P/V = 110W/12V = 9.17A</p>
+                                        <p>Tail lights: I = P/V = 20W/12V = 1.67A</p>
+                                        <p>Total current: 10.84A when all lights are on</p>
+                                    </div>
+                                </div>
+                            </section>
+                            
+                            <section id="calculators">
+                                <h2>Interactive Problem Solvers</h2>
+                                <p>Below are some interactive tools to help you practice solving DC circuit problems. Enter your values and see the results instantly!</p>
+                                
+                                <div class="calculator-tabs">
+                                    <div class="tab-buttons">
+                                        <button class="tab-btn active" data-target="voltage-divider">Voltage Divider</button>
+                                        <button class="tab-btn" data-target="power-calculator">Power Calculator</button>
+                                        <button class="tab-btn" data-target="advanced">Advanced Circuit Analyzer</button>
+                                    </div>
+                                    
+                                    <div class="tab-content">
+                                        <div class="tab-pane active" id="voltage-divider">
+                                            <h3>Voltage Divider Calculator</h3>
+                                            <p>A voltage divider is a simple circuit that produces an output voltage that is a fraction of its input voltage.</p>
+                                            
+                                            <div class="circuit-diagram">
+                                                <svg width="300" height="200" viewBox="0 0 300 200">
+                                                    <!-- Battery -->
+                                                    <line x1="50" y1="150" x2="50" y2="110" stroke="#000" stroke-width="2" />
+                                                    <line x1="40" y1="110" x2="60" y2="110" stroke="#000" stroke-width="2" />
+                                                    <line x1="35" y1="100" x2="65" y2="100" stroke="#000" stroke-width="2" />
+                                                    <text x="75" y="125" text-anchor="middle" font-size="12">Vin</text>
+                                                    
+                                                    <!-- Circuit -->
+                                                    <line x1="50" y1="100" x2="50" y2="50" stroke="#000" stroke-width="2" />
+                                                    <line x1="50" y1="50" x2="150" y2="50" stroke="#000" stroke-width="2" />
+                                                    <line x1="150" y1="50" x2="150" y2="100" stroke="#000" stroke-width="2" />
+                                                    <path d="M150,100 L155,95 L160,105 L165,95 L170,105 L175,95 L180,105 L185,95 L190,105 L195,95 L200,100" fill="none" stroke="#000" stroke-width="2" />
+                                                    <text x="175" y="90" text-anchor="middle" font-size="12">R1</text>
+                                                    
+                                                    <line x1="200" y1="100" x2="200" y2="150" stroke="#000" stroke-width="2" />
+                                                    <path d="M150,150 L155,145 L160,155 L165,145 L170,155 L175,145 L180,155 L185,145 L190,155 L195,145 L200,150" fill="none" stroke="#000" stroke-width="2" />
+                                                    <text x="175" y="170" text-anchor="middle" font-size="12">R2</text>
+                                                    
+                                                    <line x1="150" y1="150" x2="150" y2="200" stroke="#000" stroke-width="2" />
+                                                    <line x1="150" y1="200" x2="50" y2="200" stroke="#000" stroke-width="2" />
+                                                    <line x1="50" y1="200" x2="50" y2="150" stroke="#000" stroke-width="2" />
+                                                    
+                                                    <!-- Output voltage -->
+                                                    <line x1="200" y1="125" x2="250" y2="125" stroke="#000" stroke-width="2" />
+                                                    <text x="270" y="125" text-anchor="middle" font-size="12">Vout</text>
+                                                    <line x1="150" y1="175" x2="250" y2="175" stroke="#000" stroke-width="2" />
+                                                    <line x1="250" y1="125" x2="250" y2="175" stroke="#000" stroke-width="2" />
+                                                </svg>
+                                            </div>
+                                            
+                                            <div class="calculator-controls">
+                                                <div class="control-group">
+                                                    <label for="input-voltage">Input Voltage (Vin):</label>
+                                                    <input type="number" id="input-voltage" step="0.1" value="12">
+                                                    <span>Volts</span>
+                                                </div>
+                                                <div class="control-group">
+                                                    <label for="r1-value">R1 Value:</label>
+                                                    <input type="number" id="r1-value" step="1" value="1000">
+                                                    <span>Ohms</span>
+                                                </div>
+                                                <div class="control-group">
+                                                    <label for="r2-value">R2 Value:</label>
+                                                    <input type="number" id="r2-value" step="1" value="1000">
+                                                    <span>Ohms</span>
+                                                </div>
+                                                <button id="calculate-divider" class="btn">Calculate</button>
+                                            </div>
+                                            
+                                            <div class="calculator-results">
+                                                <div class="result-item">
+                                                    <p>Output Voltage (Vout):</p>
+                                                    <p id="output-voltage">6.00 V</p>
+                                                </div>
+                                                <div class="result-item">
+                                                    <p>Current through circuit:</p>
+                                                    <p id="divider-current">0.006 A</p>
+                                                </div>
+                                                <div class="formula">
+                                                    <p>Vout = Vin × R2/(R1 + R2)</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        
+                                        <div class="tab-pane" id="power-calculator">
+                                            <h3>Power Calculator</h3>
+                                            <p>Calculate power in a DC circuit using different combinations of voltage, current, and resistance.</p>
+                                            
+                                            <div class="calculator-controls">
+                                                <div class="control-group">
+                                                    <label for="power-voltage">Voltage:</label>
+                                                    <input type="number" id="power-voltage" step="0.1" value="12">
+                                                    <span>Volts</span>
+                                                </div>
+                                                <div class="control-group">
+                                                    <label for="power-current">Current:</label>
+                                                    <input type="number" id="power-current" step="0.01" value="2">
+                                                    <span>Amps</span>
+                                                </div>
+                                                <div class="control-group">
+                                                    <label for="power-resistance">Resistance:</label>
+                                                    <input type="number" id="power-resistance" step="0.1" value="6">
+                                                    <span>Ohms</span>
+                                                </div>
+                                                <div class="control-buttons">
+                                                    <button id="calc-power-by-vi" class="btn">Calculate Power (V×I)</button>
+                                                    <button id="calc-power-by-ir" class="btn">Calculate Power (I²×R)</button>
+                                                    <button id="calc-power-by-vr" class="btn">Calculate Power (V²/R)</button>
+                                                </div>
+                                            </div>
+                                            
+                                            <div class="calculator-results">
+                                                <div class="result-item">
+                                                    <p>Power:</p>
+                                                    <p id="power-result">24.00 Watts</p>
+                                                </div>
+                                                <div class="formula" id="power-formula">
+                                                    <p>P = V × I</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        
+                                        <div class="tab-pane" id="advanced">
+                                            <h3>Advanced Circuit Analyzer</h3>
+                                            <p>Design a custom circuit by adding resistors in series and parallel, then calculate the total resistance, current, and power.</p>
+                                            
+                                            <div class="circuit-builder">
+                                                <div class="circuit-options">
+                                                    <div class="control-group">
+                                                        <label for="circuit-voltage">Supply Voltage:</label>
+                                                        <input type="number" id="circuit-voltage" step="0.1" value="12">
+                                                        <span>Volts</span>
+                                                    </div>
+                                                    <div class="circuit-elements">
+                                                        <h4>Circuit Configuration:</h4>
+                                                        <div class="circuit-element-options">
+                                                            <div class="option">
+                                                                <input type="radio" id="config-series" name="circuit-config" checked>
+                                                                <label for="config-series">Series</label>
+                                                            </div>
+                                                            <div class="option">
+                                                                <input type="radio" id="config-parallel" name="circuit-config">
+                                                                <label for="config-parallel">Parallel</label>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                
+                                                <div id="resistor-container">
+                                                    <h4>Resistors:</h4>
+                                                    <div class="resistor-list" id="advanced-resistor-list">
+                                                        <div class="resistor-item">
+                                                            <label for="res1">R1:</label>
+                                                            <input type="number" id="res1" value="100" min="1">
+                                                            <span>Ω</span>
+                                                        </div>
+                                                        <div class="resistor-item">
+                                                            <label for="res2">R2:</label>
+                                                            <input type="number" id="res2" value="200" min="1">
+                                                            <span>Ω</span>
+                                                        </div>
+                                                    </div>
+                                                    <div class="resistor-controls">
+                                                        <button id="add-resistor" class="btn small"><i class="fas fa-plus"></i> Add</button>
+                                                        <button id="remove-resistor" class="btn small"><i class="fas fa-minus"></i> Remove</button>
+                                                    </div>
+                                                </div>
+                                                
+                                                <button id="analyze-circuit" class="btn">Analyze Circuit</button>
+                                                
+                                                <div class="analysis-results">
+                                                    <div class="result-item">
+                                                        <p>Total Resistance:</p>
+                                                        <p id="total-resistance">300.00 Ω</p>
+                                                    </div>
+                                                    <div class="result-item">
+                                                        <p>Total Current:</p>
+                                                        <p id="total-current">0.04 A</p>
+                                                    </div>
+                                                    <div class="result-item">
+                                                        <p>Total Power:</p>
+                                                        <p id="total-power">0.48 W</p>
+                                                    </div>
+                                                </div>
+                                                
+                                                <div class="circuit-visualization" id="custom-circuit-visualization">
+                                                    <!-- Dynamic circuit visualization will be rendered here -->
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </section>
+                            
+                            <div class="next-section">
+                                <p>Interested in learning more? Check out our references for additional resources.</p>
+                                <a href="references.html" class="btn primary">View References</a>
+                            </div>
+                        </article>
+                    </div>
+                    
+                    <aside class="sidebar">
+                        <div class="sidebar-widget">
+                            <h3>Quick Navigation</h3>
+                            <ul>
+                                <li><a href="#household">Household Applications</a></li>
+                                <li><a href="#electronic-devices">Electronic Devices</a></li>
+                                <li><a href="#automotive">Automotive Applications</a></li>
+                                <li><a href="#calculators">Interactive Problem Solvers</a></li>
+                            </ul>
+                        </div>
+                        
+                        <div class="sidebar-widget">
+                            <h3>Did You Know?</h3>
+                            <div class="fun-fact">
+                                <p>The first practical application of DC circuits was in telegraph systems in the 1830s, long before household electricity became common.</p>
+                            </div>
+                        </div>
+                        
+                        <div class="sidebar-widget">
+                            <h3>Related Topics</h3>
+                            <ul>
+                                <li><a href="key-concepts.html#ohms-law">Ohm's Law</a></li>
+                                <li><a href="key-concepts.html#series-circuits">Series Circuits</a></li>
+                                <li><a href="key-concepts.html#parallel-circuits">Parallel Circuits</a></li>
+                            </ul>
+                        </div>
+                    </aside>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer-content">
+            <div class="footer-logo">
+                <svg width="30" height="30" viewBox="0 0 40 40">
+                    <circle cx="20" cy="20" r="15" fill="#008080" />
+                    <text x="20" y="25" font-size="14" text-anchor="middle" fill="#fff">DC</text>
+                </svg>
+                <h3>DC Circuits</h3>
+            </div>
+            <div class="footer-links">
+                <div class="footer-col">
+                    <h4>Learn</h4>
+                    <ul>
+                        <li><a href="introduction.html">Introduction</a></li>
+                        <li><a href="key-concepts.html">Key Concepts</a></li>
+                        <li><a href="applications.html">Applications</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Resources</h4>
+                    <ul>
+                        <li><a href="references.html">References</a></li>
+                        <li><a href="references.html#books">Recommended Books</a></li>
+                        <li><a href="references.html#websites">Online Resources</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2025 DC Circuits Educational Website. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+    <script src="js/circuit-simulator.js"></script>
+</body>
+</html>

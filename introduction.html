@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DC Circuits | Introduction</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <svg width="40" height="40" viewBox="0 0 40 40">
+                <circle cx="20" cy="20" r="15" fill="#008080" />
+                <text x="20" y="25" font-size="14" text-anchor="middle" fill="#fff">DC</text>
+            </svg>
+            <h1>DC Circuits</h1>
+        </div>
+        <nav>
+            <div class="menu-toggle">
+                <i class="fas fa-bars"></i>
+            </div>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li class="active"><a href="introduction.html">Introduction</a></li>
+                <li><a href="key-concepts.html">Key Concepts</a></li>
+                <li><a href="applications.html">Applications</a></li>
+                <li><a href="references.html">References</a></li>
+            
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <div class="page-banner">
+            <h2>Introduction to DC Circuits</h2>
+        </div>
+
+        <section class="content-section">
+            <div class="container">
+                <div class="content-with-sidebar">
+                    <div class="main-content">
+                        <article>
+                            <h2>What is a DC Circuit?</h2>
+                            <p>A Direct Current (DC) circuit is an electrical circuit where the current flows in one direction only. Unlike Alternating Current (AC), which periodically changes direction, DC maintains a constant polarity from the positive terminal of the source to the negative terminal.</p>
+                            
+                            <div class="info-box">
+                                <h3><i class="fas fa-lightbulb"></i> Key Characteristic</h3>
+                                <p>The key characteristic of a DC circuit is that the electric current flows in a consistent direction, from higher potential to lower potential.</p>
+                            </div>
+                            
+                            <p>DC circuits are fundamental to understanding electronics and are used in a wide variety of applications, from simple battery-powered devices to complex electronic systems. They provide the foundation for learning more advanced concepts in electrical engineering.</p>
+                            
+                            <h3>Components of a DC Circuit</h3>
+                            <p>A basic DC circuit consists of the following components:</p>
+                            
+                            <div class="component-grid">
+                                <div class="component-item">
+                                    <i class="fas fa-battery-full"></i>
+                                    <h4>Power Source</h4>
+                                    <p>Batteries, power supplies, or generators that provide the electrical energy for the circuit.</p>
+                                </div>
+                                <div class="component-item">
+                                    <i class="fas fa-wave-square"></i>
+                                    <h4>Conductors</h4>
+                                    <p>Wires or traces that provide a path for the current to flow through the circuit.</p>
+                                </div>
+                                <div class="component-item">
+                                    <i class="fas fa-microchip"></i>
+                                    <h4>Load</h4>
+                                    <p>Devices that consume electrical energy, such as lights, motors, or electronic components.</p>
+                                </div>
+                                <div class="component-item">
+                                    <i class="fas fa-sliders-h"></i>
+                                    <h4>Control Elements</h4>
+                                    <p>Switches, resistors, and other components that control the flow of current in the circuit.</p>
+                                </div>
+                            </div>
+                            
+                            <h3>Types of DC Circuits</h3>
+                            <p>DC circuits can be categorized into several types based on how components are connected:</p>
+                            
+                            <div class="circuit-types">
+                                <div class="circuit-type">
+                                    <h4>Series Circuits</h4>
+                                    <p>In a series circuit, components are connected end-to-end, forming a single path for current flow. The same current flows through each component.</p>
+                                    <div class="circuit-diagram">
+                                        <svg width="300" height="100" viewBox="0 0 300 100">
+                                            <!-- Battery -->
+                                            <line x1="20" y1="50" x2="20" y2="20" stroke="#000" stroke-width="2" />
+                                            <line x1="10" y1="20" x2="30" y2="20" stroke="#000" stroke-width="2" />
+                                            <line x1="5" y1="10" x2="35" y2="10" stroke="#000" stroke-width="2" />
+                                            
+                                            <!-- Wires -->
+                                            <line x1="20" y1="10" x2="20" y2="5" stroke="#000" stroke-width="2" />
+                                            <line x1="20" y1="5" x2="50" y2="5" stroke="#000" stroke-width="2" />
+                                            <line x1="50" y1="5" x2="50" y2="50" stroke="#000" stroke-width="2" />
+                                            <line x1="50" y1="50" x2="100" y2="50" stroke="#000" stroke-width="2" />
+                                            <line x1="150" y1="50" x2="200" y2="50" stroke="#000" stroke-width="2" />
+                                            <line x1="250" y1="50" x2="280" y2="50" stroke="#000" stroke-width="2" />
+                                            <line x1="280" y1="50" x2="280" y2="5" stroke="#000" stroke-width="2" />
+                                            <line x1="280" y1="5" x2="20" y2="5" stroke="#000" stroke-width="2" />
+                                            <line x1="20" y1="50" x2="50" y2="50" stroke="#000" stroke-width="2" />
+                                            
+                                            <!-- Resistors -->
+                                            <path d="M100,50 L105,45 L110,55 L115,45 L120,55 L125,45 L130,55 L135,45 L140,55 L145,45 L150,50" fill="none" stroke="#000" stroke-width="2" />
+                                            <path d="M200,50 L205,45 L210,55 L215,45 L220,55 L225,45 L230,55 L235,45 L240,55 L245,45 L250,50" fill="none" stroke="#000" stroke-width="2" />
+                                            
+                                            <!-- Text Labels -->
+                                            <text x="125" y="75" text-anchor="middle" font-size="12">R1</text>
+                                            <text x="225" y="75" text-anchor="middle" font-size="12">R2</text>
+                                            <text x="20" y="75" text-anchor="middle" font-size="12">V</text>
+                                        </svg>
+                                    </div>
+                                </div>
+                                
+                                <div class="circuit-type">
+                                    <h4>Parallel Circuits</h4>
+                                    <p>In a parallel circuit, components are connected across each other, providing multiple paths for current flow. The voltage across each component is the same.</p>
+                                    <div class="circuit-diagram">
+                                        <svg width="250" height="200" viewBox="0 0 250 200">
+                                            <!-- Battery -->
+                                            <line x1="20" y1="100" x2="20" y2="70" stroke="#000" stroke-width="2" />
+                                            <line x1="10" y1="70" x2="30" y2="70" stroke="#000" stroke-width="2" />
+                                            <line x1="5" y1="60" x2="35" y2="60" stroke="#000" stroke-width="2" />
+                                            
+                                            <!-- Wires -->
+                                            <line x1="20" y1="60" x2="20" y2="20" stroke="#000" stroke-width="2" />
+                                            <line x1="20" y1="20" x2="50" y2="20" stroke="#000" stroke-width="2" />
+                                            <line x1="50" y1="20" x2="50" y2="180" stroke="#000" stroke-width="2" />
+                                            <line x1="50" y1="180" x2="20" y2="180" stroke="#000" stroke-width="2" />
+                                            <line x1="20" y1="180" x2="20" y2="100" stroke="#000" stroke-width="2" />
+                                            
+                                            <!-- Branches -->
+                                            <line x1="50" y1="60" x2="200" y2="60" stroke="#000" stroke-width="2" />
+                                            <line x1="50" y1="100" x2="200" y2="100" stroke="#000" stroke-width="2" />
+                                            <line x1="50" y1="140" x2="200" y2="140" stroke="#000" stroke-width="2" />
+                                            
+                                            <!-- Resistors -->
+                                            <path d="M125,60 L130,55 L135,65 L140,55 L145,65 L150,55 L155,65 L160,55 L165,65 L170,55 L175,60" fill="none" stroke="#000" stroke-width="2" />
+                                            <path d="M125,100 L130,95 L135,105 L140,95 L145,105 L150,95 L155,105 L160,95 L165,105 L170,95 L175,100" fill="none" stroke="#000" stroke-width="2" />
+                                            <path d="M125,140 L130,135 L135,145 L140,135 L145,145 L150,135 L155,145 L160,135 L165,145 L170,135 L175,140" fill="none" stroke="#000" stroke-width="2" />
+                                            
+                                            <!-- Connector -->
+                                            <line x1="200" y1="60" x2="200" y2="140" stroke="#000" stroke-width="2" />
+                                            
+                                            <!-- Text Labels -->
+                                            <text x="150" y="50" text-anchor="middle" font-size="12">R1</text>
+                                            <text x="150" y="90" text-anchor="middle" font-size="12">R2</text>
+                                            <text x="150" y="130" text-anchor="middle" font-size="12">R3</text>
+                                            <text x="20" y="120" text-anchor="middle" font-size="12">V</text>
+                                        </svg>
+                                    </div>
+                                </div>
+                                
+                                <div class="circuit-type">
+                                    <h4>Complex Circuits</h4>
+                                    <p>Many real-world circuits combine both series and parallel elements to create complex networks with specific electrical characteristics.</p>
+                                </div>
+                            </div>
+                            
+                            <h3>Basic Laws and Principles</h3>
+                            <p>Several fundamental laws govern the behavior of DC circuits:</p>
+                            
+                            <div class="laws-grid">
+                                <div class="law-item">
+                                    <h4>Ohm's Law</h4>
+                                    <p>Relates voltage (V), current (I), and resistance (R):</p>
+                                    <div class="formula">
+                                        <p>V = I × R</p>
+                                    </div>
+                                </div>
+                                <div class="law-item">
+                                    <h4>Kirchhoff's Current Law (KCL)</h4>
+                                    <p>The sum of currents entering a node equals the sum of currents leaving the node.</p>
+                                </div>
+                                <div class="law-item">
+                                    <h4>Kirchhoff's Voltage Law (KVL)</h4>
+                                    <p>The sum of all voltages around any closed loop in a circuit equals zero.</p>
+                                </div>
+                            </div>
+                            
+                            <div class="next-section">
+                                <p>Ready to dive deeper? Learn about the key concepts in DC circuits including resistance, power, and energy.</p>
+                                <a href="key-concepts.html" class="btn primary">Continue to Key Concepts</a>
+                            </div>
+                        </article>
+                    </div>
+                    
+                    <aside class="sidebar">
+                        <div class="sidebar-widget">
+                            <h3>Quick Navigation</h3>
+                            <ul>
+                                <li><a href="#what-is-a-dc-circuit">What is a DC Circuit?</a></li>
+                                <li><a href="#components-of-a-dc-circuit">Components</a></li>
+                                <li><a href="#types-of-dc-circuits">Circuit Types</a></li>
+                                <li><a href="#basic-laws-and-principles">Basic Laws</a></li>
+                            </ul>
+                        </div>
+                        
+                        <div class="sidebar-widget">
+                            <h3>Did You Know?</h3>
+                            <div class="fun-fact">
+                                <p>Thomas Edison advocated for DC power distribution in the early days of electricity, leading to the famous "War of Currents" with Nikola Tesla and George Westinghouse, who promoted AC power.</p>
+                            </div>
+                        </div>
+                        
+                        <div class="sidebar-widget">
+                            <h3>Related Topics</h3>
+                            <ul>
+                                <li><a href="key-concepts.html#ohms-law">Ohm's Law</a></li>
+                                <li><a href="key-concepts.html#series-circuits">Series Circuits</a></li>
+                                <li><a href="key-concepts.html#parallel-circuits">Parallel Circuits</a></li>
+                                <li><a href="applications.html">Real-world Applications</a></li>
+                            </ul>
+                        </div>
+                    </aside>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer-content">
+            <div class="footer-logo">
+                <svg width="30" height="30" viewBox="0 0 40 40">
+                    <circle cx="20" cy="20" r="15" fill="#008080" />
+                    <text x="20" y="25" font-size="14" text-anchor="middle" fill="#fff">DC</text>
+                </svg>
+                <h3>DC Circuits</h3>
+            </div>
+            <div class="footer-links">
+                <div class="footer-col">
+                    <h4>Learn</h4>
+                    <ul>
+                        <li><a href="introduction.html">Introduction</a></li>
+                        <li><a href="key-concepts.html">Key Concepts</a></li>
+                        <li><a href="applications.html">Applications</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Resources</h4>
+                    <ul>
+                        <li><a href="references.html">References</a></li>
+                        <li><a href="references.html#books">Recommended Books</a></li>
+                        <li><a href="references.html#websites">Online Resources</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2025 DC Circuits Educational Website. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+</body>
+</html>
